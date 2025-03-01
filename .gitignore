@@ -4,7 +4,14 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
+### Build ###
+/.mvn/
+**/target/
+**/build/
+**/.gradle/
+**/.mvn/
+
+### STS (Spring Tool Suite) ###
 .apt_generated
 .classpath
 .factorypath
@@ -12,23 +19,35 @@ target/
 .settings
 .springBeans
 .sts4-cache
-*.yml
-*.log
+
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
-/htmlReport
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
+
+### Sensitive Files ###
+application.properties
+.env
+*.log
+
+
+htmlReport/
+src/test/
+
+# macOS system files
+.DS_Store
+
+# Ignore YAML configuration files (Sensitive Data)
+*.yml
+
